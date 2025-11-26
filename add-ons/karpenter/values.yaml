@@ -1,11 +1,10 @@
 karpenter:
   serviceAccount:
-    create: false
+    create: true
   nodeSelector:
     kubernetes.io/os: linux
   settings:
-    aws:
-      clusterName:
-      clusterEndpoint:
-      defaultInstanceProfile:
-      interruptionQueueName:
+    clusterName:
+    clusterEndpoint:
+    defaultInstanceProfile:
+    interruptionQueueName:
